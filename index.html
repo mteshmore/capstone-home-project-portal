@@ -16,13 +16,15 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                          <button class="btn btn-outline-success my-2 my-sm-0 float-right" type="signout">Sign Out</button>
                     </li>
                   </ul>
                 </div>
               </nav>
+
+              
 
     <div class="container">
         <table class="table table-hover">
@@ -33,48 +35,102 @@
                     <th scope="col">Event Title</th>
                     <th scope="col">Event Type</th>
                     <th scope="col">Area of Service</th>
-                    <th scope="col">Description</th>
                     <th scope="col">Event Date</th>
-                    <th scope="col">Start Time</th>
-                    <th scope="col">End Time</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Room</th>
-                    <th scope="col">Event Capacity</th>
                     <th scope="col">City</th>
-                    <th scope="col">County</th>
-                    <th scope="col">Zip Code</th>
-                    <th scope="col">State</th>
-                    <th scope="col">Event Contact First Name</th>
-                    <th scope="col">Event Contact Last Name</th>
-                    <th scope="col">Event Contact Email</th>
-                    <th scope="col">Event Contact Phone</th>
-                    <th scope="col">Event Coordinator First Name</th>
-                    <th scope="col">Event Coordinator Last Name</th>
-                    <th scope="col">Event Coordinator Email</th>
-                    <th scope="col">Event Coordinator Phone</th>
-                    <th scope="col">Website</th>
-                    <th scope="col">Cover Photo</th>
+                    <th scope="col" >Details</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                    <td>City of Seattle</td>
+                    <td>Save the City!</td>
+                    <td>Activism</td>
+                    <td>Housing/Shelter</td>
+                    <td>June 1st, 2019</td>
+                    <td>Seattle</td>
+                    <td><div class="btn">
+                      <button id="learnMoreButton" type="button" class="btn btn-dark"
+                          data-toggle="modal" data-target="#myModalLong">
+                          Learn More
+                      </button>
+                    </div>
+                  </td>
                   </tr>
                 </tbody>
+
+
+              <div class="modal fade" id="myModalLong" tabindex="-1" role="dialog"
+                  aria-labelledby="myModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="myModalLongTitle">Event Information
+                              </h5>
+                              <button type="button" class="close" data-dismiss="modal"
+                                  aria-label="Close">
+                                  <span class="close" aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <div>
+                                  <div><span class="modalMark">Organization: </span><span
+                                          class="modalOrg"><a href="">City of
+                                              Seattle</a></span><span
+                                          class="modalDescription"></span></div>
+                                          <div><span >Event Title: </span><span
+                                            class="modalDescription">Save the City!</span></div>
+                                            <div><span >Event Type: </span><span
+                                              class="modalDescription">Activism</span></div>
+                                              <div><span >Area of Service: </span><span
+                                                class="modalDescription">Housing/Shelter</span></div>
+                                  <span class="modalMark">Description: </span><span
+                                      class="modalDescription">Join us at City Hall to talk to lawmakers
+                                      for more affordable housing in Seattle! We need you to
+                                      represent your community in action to our lawmakers!</span>
+                              </div>
+                              <div><span class="modalMark">Event Capacity: </span><span
+                                      class="modalDescription">7</span></div>
+                              <div><span class="modalMark">Event Date: </span><span
+                                      class="modalDescription">04/22/2019</span></div>
+                                      <div><span class="modalMark">Start Time: </span><span
+                                        class="modalDescription">5:00 PM</span></div>
+                                        <div><span class="modalMark">End Time: </span><span
+                                          class="modalDescription">8:00 PM</span></div>
+                              <div><span class="modalMark">Address: </span><span
+                                      class="modalDescription">1400 Pacific Ave</span></div>
+                                      <div><span class="modalMark">Room: </span><span
+                                        class="modalDescription">300</span></div>
+                                        <div><span class="modalMark">City: </span><span
+                                          class="modalDescription">Seattle</span></div>
+                                          <div><span class="modalMark">Zip Code: </span><span
+                                            class="modalDescription">5:00 PM</span></div>
+                                            <div><span class="modalMark">State: </span><span
+                                              class="modalDescription">WA</span></div>
+                                              
+                              <div><span class="modalMark">Event Contact: </span>
+                                  <span class="modalDescription">Erica Admassar-(330)
+                                      555-4217</span></div>
+                                      <div><span class="modalMark">Event Coordinator: </span>
+                                        <span class="modalDescription">Same</span></div>
+                                        <div><span class="modalMark">Website: </span>
+                                          <span class="modalDescription">cityofseattle.com</span></div>
+                                          <div><span class="modalMark">Photo: </span>
+                                            <span class="modalDescription"><a href="https://bit.ly/2VQvRsL">https://bit.ly/2VQvRsL</a></span></div>
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-dismiss="modal">Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
               </table>
             </div>
     
